@@ -67,10 +67,11 @@ apt install python-pip -y
 apt-get install build-essential python3-dev python2.7-dev -y
 echo -e "\n\033[1m[*] Instalando Kerbrute (AD)...\033[0m"
 sleep 5
-cd /
+cd /opt
 git clone https://github.com/ropnop/kerbrute
 cd kerbrute
 make
+rm -r /opt/kerbrute
 #Impacket casi siempre viene instalado por defecto, solo descomentar si no se ubica
 #echo -e "[*] Instalando IMPACKET..."
 #python3 -m pip install impacket
@@ -97,9 +98,10 @@ alias cat='/bin/batcat' >> ~/.zshrc
 alias catn='/bin/cat' >> ~/.zshrc
 alias cat='/bin/batcat' >> ~/.bashrc
 alias catn='/bin/cat' >> ~/.bashrc
-echo -e "\n\033[1m[*] Instalando un debugger (GEF por defecto)...\033[0m"
+echo -e "\n\033[1m[*] Instalando un debugger (EDB y GEF por defecto)...\033[0m"
 sleep 5
-#apt install edb-debugger
+apt install edb-debugger -y
+apt install gdb -y #Inicializa los debugger en el sistema, se sustituye por GEF
 #git clone https://github.com/longld/peda.git ~/peda
 #echo "source ~/peda/peda.py" >> ~/.gdbinit
 wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
