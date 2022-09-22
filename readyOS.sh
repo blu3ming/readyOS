@@ -90,10 +90,10 @@ apt install gobuster -y
 echo -e "\n\033[1m[*] Instalando BATCAT y 'aliaseandolo' con CAT...\033[0m"
 sleep 5
 apt install bat -y
-alias cat='/bin/batcat' >> ~/.zshrc
-alias catn='/bin/cat' >> ~/.zshrc
-alias cat='/bin/batcat' >> ~/.bashrc
-alias catn='/bin/cat' >> ~/.bashrc
+echo "alias cat='/bin/batcat'" >> ~/.zshrc
+echo "alias catn='/bin/cat'" >> ~/.zshrc
+echo "alias cat='/bin/batcat'" >> ~/.bashrc
+echo "alias catn='/bin/cat'" >> ~/.bashrc
 echo -e "\n\033[1m[*] Instalando un debugger (EDB y GEF por defecto)...\033[0m"
 sleep 5
 apt install edb-debugger -y
