@@ -63,9 +63,10 @@ cd /
 git clone https://github.com/ropnop/kerbrute
 cd kerbrute
 make
-echo -e "[*] Instalando IMPACKET..."
-python3 -m pip install impacket
-echo "export PATH=$PATH:/usr/share/doc/python3-impacket/examples" >> ~/.zshrc
+#Impacket casi siempre viene instalado por defecto, solo descomentar si no se ubica
+#echo -e "[*] Instalando IMPACKET..."
+#python3 -m pip install impacket
+#echo "export PATH=$PATH:/usr/share/doc/python3-impacket/examples" >> ~/.zshrc
 echo -e "[*] Instalando Bloodhound y Neo4j..."
 sleep 5
 apt install bloodhound neo4j -y
@@ -101,7 +102,7 @@ echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 echo -e "[*] Instalando Keepass (pentesting de contraseñas)..."
 sleep 5
 apt install keepassx -y
-echo -e "[*] Instalando utilidades de esteganografia (steghode y exiftool)..."
+echo -e "[*] Instalando utilidades de esteganografia (steghide y exiftool)..."
 sleep 5
 apt install steghide -y
 apt install libimage-exiftool-perl -y
