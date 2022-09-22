@@ -53,7 +53,7 @@ echo -e "\n\033[1m[-] Nota: PEASS ya no aloja los binarios en el repo, sino en l
 sleep 10
 cd /opt
 mkdir PEASS
-cd !$
+cd /opt/PEAS
 wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/linpeas.sh
 wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASany.exe
 wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64.exe
