@@ -54,6 +54,9 @@ apt install xclip -y
 echo -e "\n\033[1m[*] Instalando JQ (lectura de JSON en consola)...\033[0m"
 sleep 5
 apt install jq -y
+echo -e "\n\033[1m[*] Instalando PLAY (reproduccion de audio desde consola)...\033[0m"
+sleep 5
+apt install play -y
 echo -e "\n\033[1m[*] Instalando PEASS en /opt...\033[0m"
 echo -e "\n\033[1m[-] Nota: PEASS ya no aloja los binarios en el repo, sino en la seccion de releases. Se recomienda dirigirse a esta sección para descargar la última versión manualmente...\033[0m"
 sleep 10
