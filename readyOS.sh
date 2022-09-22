@@ -79,9 +79,6 @@ apt-get -y install remmina
 echo -e "[*] Instalando Pwntools de Python..."
 sleep 5
 pip install pwn
-echo -e "[*] Instalando SSH2JOHN..."
-sleep 5
-instalar ssh2john
 echo -e "[*] Instalando Gobuster..."
 sleep 5
 apt install gobuster -y
