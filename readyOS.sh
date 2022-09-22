@@ -67,11 +67,7 @@ apt install python-pip -y
 apt-get install build-essential python3-dev python2.7-dev -y
 echo -e "\n\033[1m[*] Instalando Kerbrute (AD)...\033[0m"
 sleep 5
-cd /opt
-git clone https://github.com/ropnop/kerbrute
-cd kerbrute
-make
-rm -r /opt/kerbrute
+pip install kerbrute
 #Impacket casi siempre viene instalado por defecto, solo descomentar si no se ubica
 #echo -e "[*] Instalando IMPACKET..."
 #python3 -m pip install impacket
