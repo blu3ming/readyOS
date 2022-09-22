@@ -44,7 +44,7 @@ echo -e "\n\033[1m[*] Descargando scripts útiles (Nishang y PowerUp)\033[0m"
 sleep 5
 cd /opt
 git clone https://github.com/samratashok/nishang
-wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1
+wget -q https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1
 echo -e "\n\033[1m[*] Instalando Xclip...\033[0m"
 sleep 5
 apt install xclip -y
@@ -54,12 +54,12 @@ sleep 10
 cd /opt
 mkdir PEASS
 cd !$
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/linpeas.sh
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASany.exe
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64.exe
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64_ofs.exe
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86.exe
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86_ofs.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/linpeas.sh
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASany.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64_ofs.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86_ofs.exe
 echo -e "\n\033[1m[*] Instalando PIP de Python 2 y 3...\033[0m"
 sleep 5
 apt install python3-pip -y
