@@ -3,13 +3,13 @@
 cd
 echo -e "\n[*] Actualizando el sistema..."
 sleep 5
-apt update
-apt upgrade
+apt update -y
+apt upgrade -y
 echo -e "\n[*] Sistema actualizado, instalando Sublime..."
 sleep 5
 apt install apt-transport-https ca-certificates curl software-properties-common -y
 sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
-apt update
+apt update -y
 apt install sublime-text -y
 echo -e "\n[*] Sublime instalado"
 echo "[*] Instalando OhMyTmux..."
