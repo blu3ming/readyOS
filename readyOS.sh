@@ -7,6 +7,14 @@ apt update -y
 apt upgrade -y
 echo -e "\n\033[1m[*] Sistema actualizado, instalando Sublime...\033[0m"
 sleep 5
+echo -e "\n\033[1m[*] Obteniendo llave pública del repo...\033[0m"
+echo -e "\n\033[1m[*] Nota: Se hardcodea una clave pública, pero debes verificar que sea la correcta. Para ello, ejecuta los comandos:\033[0m"
+echo -e '\nsudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/'
+echo -e 'apt update -y'
+echo -e "\n\033[1m[*] Si no hay error, puedes continuar. Si lo hay, toma nota de la clave pública que aparece y modifica este script.\033[0m"
+sleep 15
+gpg --keyserver keyserver.ubuntu.com --recv F57D4F59BD3DF454 #Añade tu clave pública
+gpg --armor --export F57D4F59BD3DF454 | sudo apt-key add - #Añade tu clave pública
 apt install apt-transport-https ca-certificates curl software-properties-common -y
 sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
 apt update -y
