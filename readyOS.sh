@@ -12,18 +12,18 @@ sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
 apt update -y
 apt install sublime-text -y
 echo -e "\n\033[1m[*] Sublime instalado\033[0m"
-echo "\n\033[1m[*] Instalando OhMyTmux...\033[0m"
+echo -e "\n\033[1m[*] Instalando OhMyTmux...\033[0m"
 sleep 5
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 echo -e "\n\033[1m[*] OhMyTmux instalado\033[0m"
-echo "\n\033[1m[*] Instalando extractPorts y mkt...\033[0m"
+echo -e "\n\033[1m[*] Instalando extractPorts y mkt...\033[0m"
 sleep 5
 curl -S https://raw.githubusercontent.com/blu3ming/readyOS/main/functions_for_zshrc >> ~/.zshrc
 curl -S https://raw.githubusercontent.com/blu3ming/readyOS/main/functions_for_zshrc >> ~/.bashrc
 echo -e "\n\033[1m[*] Funciones instaladas\033[0m"
-echo "\n\033[1m[*] Recuerda reiniciar la consola para poder usarlas...\033[0m"
+echo -e "\n\033[1m[*] Recuerda reiniciar la consola para poder usarlas...\033[0m"
 sleep 5
 echo -e "\n\033[1m[*] Extrayendo rockyou.txt...\033[0m"
 sleep 5
