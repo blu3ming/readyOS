@@ -36,6 +36,9 @@ sleep 5
 echo -e "\n\033[1m[*] Extrayendo rockyou.txt...\033[0m"
 sleep 5
 gzip -d /usr/share/wordlists/rockyou.txt.gz
+echo -e "\n\033[1m[*] Instalando FFMPEG (conversion multimedia)...\033[0m"
+sleep 5
+apt install ffmpeg -y
 echo -e "\n\033[1m[*] Descargando diccionarios de SecLists...\033[0m"
 sleep 5
 cd /usr/share/wordlists/
