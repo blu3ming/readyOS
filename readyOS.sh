@@ -93,6 +93,9 @@ apt-get -y install remmina
 echo -e "\n\033[1m[*] Instalando Pwntools de Python...\033[0m"
 sleep 5
 pip install pwn
+echo -e "\n\033[1m[*] Instalando Droopescan (escaner CMS)...\033[0m"
+sleep 5
+pip install droopescan
 echo -e "\n\033[1m[*] Instalando Gobuster...\033[0m"
 sleep 5
 apt install gobuster -y
