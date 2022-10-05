@@ -114,6 +114,9 @@ apt install gdb -y #Inicializa los debugger en el sistema, se sustituye por GEF
 #echo "source ~/peda/peda.py" >> ~/.gdbinit
 wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+echo -e "\n\033[1m[*] Instalando Ghidra...\033[0m"
+sleep 5
+apt install ghidra -y
 echo -e "\n\033[1m[*] Instalando Keepass (pentesting de contraseñas)...\033[0m"
 sleep 5
 apt install keepassx -y
