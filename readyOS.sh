@@ -127,6 +127,10 @@ apt install libimage-exiftool-perl -y
 echo -e "\n\033[1m[*] Instalando Crowbar (Bruteforce de RDP o SSH)...\033[0m"
 sleep 5
 apt install crowbar -y
+echo -e "\n\033[1m[*] Instalando Docker (Docker.io y docker-compose)...\033[0m"
+sleep 5
+apt install docker.io -y
+apt install docker-compose
 echo -e "\n\033[1m[*] Actualizando DB del sistema con updatedb...\033[0m"
 sleep 5
 updatedb
