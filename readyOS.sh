@@ -120,6 +120,9 @@ apt install ghidra -y
 echo -e "\n\033[1m[*] Instalando Keepass (pentesting de contraseñas)...\033[0m"
 sleep 5
 apt install keepassx -y
+echo -e "\n\033[1m[*] Instalando Redis-Tools (servicio web en algunas máquinas de HTB)...\033[0m"
+sleep 5
+apt install redis-tools -y
 echo -e "\n\033[1m[*] Instalando utilidades de esteganografia (steghide y exiftool)...\033[0m"
 sleep 5
 apt install steghide -y
