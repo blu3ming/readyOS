@@ -74,14 +74,17 @@ sleep 5
 apt install python3-pip -y
 curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 python2 get-pip.py
+pip2 install --upgrade pip
+pip2 install --upgrade setuptools wheel
 rm get-pip.py
 apt-get install build-essential python3-dev python2.7-dev -y
 echo -e "\n\033[1m[*] Instalando Kerbrute (AD)...\033[0m"
 sleep 5
 pip install kerbrute
-#Impacket casi siempre viene instalado por defecto, solo descomentar si no se ubica
-#echo -e "[*] Instalando IMPACKET..."
+#Impacket casi siempre viene instalado por defecto para python3, solo descomentar si no se ubica
+echo -e "[*] Instalando IMPACKET..."
 #python3 -m pip install impacket
+pip2 install impacket
 #echo "export PATH=$PATH:/usr/share/doc/python3-impacket/examples" >> ~/.zshrc
 echo -e "\n\033[1m[*] Instalando Bloodhound y Neo4j...\033[0m"
 sleep 5
