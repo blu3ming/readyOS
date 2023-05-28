@@ -72,7 +72,9 @@ wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPE
 echo -e "\n\033[1m[*] Instalando PIP de Python 2 y 3...\033[0m"
 sleep 5
 apt install python3-pip -y
-apt install python-pip -y
+curl -s https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2 get-pip.py
+rm get-pip.py
 apt-get install build-essential python3-dev python2.7-dev -y
 echo -e "\n\033[1m[*] Instalando Kerbrute (AD)...\033[0m"
 sleep 5
