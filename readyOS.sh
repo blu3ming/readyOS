@@ -63,12 +63,12 @@ sleep 10
 cd /opt
 mkdir PEAS
 cd /opt/PEAS
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/linpeas.sh
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASany.exe
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64.exe
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx64_ofs.exe
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86.exe
-wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20220918/winPEASx86_ofs.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/linpeas.sh
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/winPEASany.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/winPEASx64.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/winPEASx64_ofs.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/winPEASx86.exe
+wget -q https://github.com/carlospolop/PEASS-ng/releases/download/20230731-452f0c44/winPEASx86_ofs.exe
 echo -e "\n\033[1m[*] Instalando PIP de Python 2 y 3...\033[0m"
 sleep 5
 apt install python3-pip -y
