@@ -86,6 +86,9 @@ echo -e "\n\033[1m[*] Instalando Docker (Docker.io y docker-compose)...\033[0m"
 sleep 5
 apt install docker.io -y
 apt install docker-compose -y
+echo -e "\n\033[1m[*] Instalando ExploitDB...\033[0m"
+sleep 5
+apt install exploitdb
 echo -e "\n\033[1m[*] Actualizando DB del sistema con updatedb...\033[0m"
 sleep 5
 updatedb
