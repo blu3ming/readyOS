@@ -64,6 +64,16 @@ apt install rlwrap -y
 echo -e "\n\033[1m[*] Instalando Pwntools de Python...\033[0m"
 sleep 5
 pip3 install pwn
+echo -e "\n\033[1m[*] Instalando requests de Python2...\033[0m"
+sleep 5
+pip2 install requests
+echo -e "\n\033[1m[*] Instalando FPM...\033[0m"
+sleep 5
+gem install -N fpm
+apt-get install rpm -y
+echo -e "\n\033[1m[*] Instalando Exploit-DB...\033[0m"
+sleep 5
+apt install exploitdb -y
 echo -e "\n\033[1m[*] Instalando Droopescan (escaner CMS)...\033[0m"
 sleep 5
 pip3 install droopescan
