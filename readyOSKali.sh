@@ -146,6 +146,13 @@ echo -e "\n\033[1m[*] Instalando Docker (Docker.io y docker-compose)...\033[0m"
 sleep 5
 apt install docker.io -y
 apt install docker-compose -y
+echo -e "\n\033[1m[*] Instalando bloodhound-python...\033[0m"
+sleep 5
+pip3 install bloodhound
+echo -e "\n\033[1m[*] Instalando utilidades para montura de discos...\033[0m"
+sleep 5
+sudo apt-get install cifs-utils -y
+sudo apt install libguestfs-tools -y
 echo -e "\n\033[1m[*] Actualizando DB del sistema con updatedb...\033[0m"
 sleep 5
 updatedb
