@@ -55,9 +55,9 @@ echo -e "\n\033[1m[*] Instalando Kerbrute (AD)...\033[0m"
 sleep 5
 pip3 install kerbrute
 #Impacket casi siempre viene instalado por defecto para python3, solo descomentar si no se ubica
-echo -e "\n\033[1m[*] Instalando Bloodhound y Neo4j...\033[0m"
+echo -e "\n\033[1m[*] Instalando Bloodhound...\033[0m"
 sleep 5
-apt install bloodhound neo4j -y
+apt install bloodhound -y
 echo -e "\n\033[1m[*] Instalando rlwrap...\033[0m"
 sleep 5
 apt install rlwrap -y
@@ -92,6 +92,26 @@ echo -e "\n\033[1m[*] Instalando utilidades de esteganografia (steghide y exifto
 sleep 5
 apt install steghide -y
 apt install libimage-exiftool-perl -y
+echo -e "\n\033[1m[*] Instalando crackmapexec...\033[0m"
+sleep 5
+cd
+python3 -m pip install pipx
+git clone https://github.com/byt3bl33d3r/CrackMapExec
+cd CrackMapExec
+pipx install .
+echo -e "\n\033[1m[*] Instalando bloodhound-python...\033[0m"
+sleep 5
+pip3 install bloodhound
+echo -e "\n\033[1m[*] Instalando utilidades para montura de discos...\033[0m"
+sleep 5
+sudo apt-get install cifs-utils -y
+sudo apt install libguestfs-tools -y
+echo -e "\n\033[1m[*] Instalando neo4j desde el sitio web...\033[0m"
+sleep 5
+wget -O- https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.com stable latest' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+sudo apt-get install neo4j=1:5.12.0 -y
 echo -e "\n\033[1m[*] Instalando Docker (Docker.io y docker-compose)...\033[0m"
 sleep 5
 apt install docker.io -y
